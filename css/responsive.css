@@ -1,0 +1,795 @@
+@media (max-width: 1240px) {
+  .start-main {
+    grid-template-columns: minmax(0, 1fr) 330px;
+    gap: 28px;
+  }
+
+  .hero h1 {
+    font-size: clamp(50px, 6.4vw, 78px);
+  }
+
+  .instruction-panel {
+    width: 316px;
+  }
+
+  .assembly-grid,
+  .network-grid {
+    grid-template-columns: 260px minmax(0, 1fr);
+  }
+
+  .components-panel {
+    flex-basis: 205px;
+  }
+
+  .component-card {
+    gap: 7px;
+  }
+
+  .component-icon {
+    width: 29px;
+    height: 29px;
+  }
+
+  .component-icon svg {
+    width: 21px;
+    height: 21px;
+  }
+
+  .tool-content {
+    grid-template-columns: minmax(150px, 0.75fr) minmax(250px, 1.2fr) auto;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .start-main {
+    grid-template-columns: 1fr;
+    max-width: 760px;
+  }
+
+  .start-panel {
+    display: none;
+  }
+
+  .hero {
+    max-width: 680px;
+  }
+
+  .hero h1 {
+    font-size: clamp(52px, 9vw, 82px);
+  }
+
+  .start-foot-mid {
+    display: none;
+  }
+
+  .hud-brand > div:last-child {
+    display: none;
+  }
+
+  .mission-chip {
+    left: 48%;
+  }
+
+  .instruction-panel {
+    width: 292px;
+    padding: 16px;
+  }
+
+  .step-item {
+    min-height: 35px;
+  }
+
+  .instruction-panel h2 {
+    font-size: 20px;
+  }
+
+  .assembly-grid,
+  .network-grid {
+    grid-template-columns: 238px minmax(0, 1fr);
+    gap: 13px;
+  }
+
+  .mission-side {
+    padding: 15px;
+  }
+
+  .mission-side h3 {
+    font-size: 18px;
+  }
+
+  .check-item {
+    min-height: 30px;
+  }
+
+  .components-panel {
+    flex-basis: 190px;
+  }
+
+  .component-meta span {
+    display: none;
+  }
+
+  .component-card {
+    min-height: 43px;
+  }
+
+  .tool-content {
+    grid-template-columns: 1fr 1.5fr;
+    gap: 12px;
+  }
+
+  .tool-content > .tool-action {
+    grid-column: 2;
+    align-items: flex-start;
+  }
+
+  .tool-info {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 5px 9px;
+  }
+
+  .tool-info p {
+    width: 100%;
+  }
+
+  .utp-workbench {
+    grid-column: 1 / -1;
+  }
+
+  .ip-form {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .ip-form .tool-info {
+    grid-column: 1 / -1;
+  }
+
+  .ip-submit {
+    grid-column: 1 / -1;
+    justify-self: start;
+  }
+
+  .terminal {
+    grid-column: 1 / -1;
+  }
+
+  .net-switch {
+    right: 4%;
+    width: 228px;
+  }
+
+  .switch-ports > i {
+    width: 10px;
+    height: 9px;
+  }
+
+  .net-pc {
+    left: 5%;
+  }
+}
+
+@media (max-width: 780px) {
+  body {
+    overflow: hidden;
+  }
+
+  .start-screen {
+    padding: 20px 20px 16px;
+    background:
+      linear-gradient(180deg, rgba(3, 9, 16, 0.94) 0%, rgba(3, 9, 16, 0.56) 55%, rgba(3, 9, 16, 0.94) 100%);
+  }
+
+  .start-status em {
+    display: none;
+  }
+
+  .start-status {
+    height: 28px;
+    padding: 0 9px;
+  }
+
+  .hero {
+    padding: 22px 0 12px;
+  }
+
+  .hero h1 {
+    margin: 14px 0;
+    font-size: clamp(46px, 12.5vw, 66px);
+  }
+
+  .hero-lead {
+    font-size: 12px;
+    line-height: 1.6;
+    max-width: 420px;
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+    margin-bottom: 23px;
+  }
+
+  .btn-hero {
+    min-height: 56px;
+    width: 100%;
+    max-width: 310px;
+  }
+
+  .hero-stats div {
+    padding: 0 16px;
+  }
+
+  .hero-stats strong {
+    font-size: 21px;
+  }
+
+  .start-foot {
+    font-size: 6px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+
+  .start-foot span:last-child {
+    display: none;
+  }
+
+  .hud-bar {
+    height: 64px;
+    padding: 0 12px;
+  }
+
+  .hud-brand {
+    gap: 7px;
+  }
+
+  .hud-brand .brand-mark.small {
+    width: 29px;
+    height: 29px;
+  }
+
+  .hud-brand strong {
+    font-size: 9px;
+  }
+
+  .mission-chip {
+    display: none;
+  }
+
+  .hud-stat {
+    padding: 0 7px;
+  }
+
+  .hud-stat span {
+    font-size: 5.5px;
+  }
+
+  .hud-stat strong {
+    font-size: 12px;
+  }
+
+  .hud-tools {
+    gap: 5px;
+  }
+
+  .icon-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+  }
+
+  .icon-btn svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .hud-progress {
+    left: 12px;
+    right: 12px;
+    bottom: -5px;
+  }
+
+  .hud-progress-meta {
+    font-size: 5px;
+  }
+
+  .instruction-panel {
+    display: none;
+  }
+
+  .objective-pill {
+    top: 74px;
+    max-width: calc(100vw - 24px);
+    padding: 7px 11px;
+    gap: 7px;
+    white-space: normal;
+    text-align: center;
+    border-radius: 9px;
+  }
+
+  .objective-pill span {
+    display: none;
+  }
+
+  .objective-pill strong {
+    font-size: 9px;
+    line-height: 1.35;
+  }
+
+  .interaction-guide {
+    bottom: 13px;
+    font-size: 8px;
+    padding: 0 10px;
+    min-height: 31px;
+    max-width: calc(100vw - 26px);
+    white-space: normal;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .crosshair {
+    display: none;
+  }
+
+  .hotspot {
+    gap: 5px;
+  }
+
+  .hs-label {
+    padding: 6px 8px;
+  }
+
+  .hs-label strong {
+    font-size: 8.5px;
+  }
+
+  .hand-dock {
+    left: 50%;
+    bottom: 60px;
+    transform: translate(-50%, 12px);
+    min-width: 200px;
+    width: max-content;
+  }
+
+  .hand-dock.is-visible {
+    transform: translate(-50%, 0);
+  }
+
+  .hand-dock.is-source {
+    opacity: 0.25;
+  }
+
+  .toasts {
+    right: 10px;
+    left: 10px;
+    bottom: 102px;
+    align-items: stretch;
+  }
+
+  .toast {
+    min-width: 0;
+    max-width: none;
+  }
+
+  .mission-intro {
+    top: 22%;
+    width: calc(100% - 32px);
+  }
+
+  .mission-intro-inner {
+    padding: 18px 20px;
+  }
+
+  .mission-intro h2 {
+    font-size: 25px;
+  }
+
+  .mission-overlay {
+    padding-top: 64px;
+  }
+
+  .mission-overlay-inner {
+    min-height: calc(100vh - 64px);
+    padding: 14px 12px 22px;
+  }
+
+  .mission-head {
+    align-items: flex-start;
+    gap: 12px;
+    padding-bottom: 12px;
+  }
+
+  .mission-head .eyebrow {
+    font-size: 7px;
+  }
+
+  .mission-head h1 {
+    font-size: 25px;
+    margin-top: 5px;
+  }
+
+  .mission-head-progress {
+    width: 110px;
+    padding-top: 5px;
+  }
+
+  .mission-head-progress > span {
+    font-size: 6px;
+  }
+
+  .assembly-grid,
+  .network-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .mission-side {
+    display: block;
+    padding: 12px 14px;
+    overflow: visible;
+    flex: 0 0 auto;
+  }
+
+  .mission-side .micro-label,
+  .mission-side h3 {
+    display: none;
+  }
+
+  .section-desc {
+    margin-bottom: 8px;
+    font-size: 9px;
+  }
+
+  .mission-checklist {
+    display: none;
+  }
+
+  .side-hint {
+    margin-top: 0;
+    padding: 7px 9px;
+  }
+
+  .side-hint span {
+    margin-bottom: 2px;
+  }
+
+  .side-hint p {
+    font-size: 7.5px;
+  }
+
+  .bench,
+  .network-bench {
+    flex: 0 0 auto;
+    min-height: 0;
+  }
+
+  .bench-topline {
+    height: 34px;
+    padding: 0 12px;
+    font-size: 5.5px;
+  }
+
+  .assembly-work {
+    flex-direction: column;
+    min-height: 0;
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .case-zone {
+    flex: 0 0 auto;
+  }
+
+  .case-shell {
+    height: 360px;
+    width: auto;
+    max-width: 100%;
+  }
+
+  .case-caption {
+    width: min(100%, 330px);
+    font-size: 5.5px;
+  }
+
+  .components-panel {
+    flex: 0 0 auto;
+    width: 100%;
+    padding: 9px;
+  }
+
+  .component-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5px;
+    overflow: visible;
+  }
+
+  .component-card {
+    min-height: 41px;
+    padding: 5px 6px;
+  }
+
+  .component-meta strong {
+    font-size: 8px;
+  }
+
+  .component-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .component-icon svg {
+    width: 19px;
+    height: 19px;
+  }
+
+  .card-state {
+    display: none;
+  }
+
+  .components-tip {
+    display: none;
+  }
+
+  .network-bench {
+    min-width: 0;
+  }
+
+  .net-canvas {
+    min-height: 285px;
+  }
+
+  .net-pc {
+    left: 3%;
+    bottom: 18%;
+    transform: scale(0.76);
+    transform-origin: left bottom;
+  }
+
+  .net-switch {
+    right: 2%;
+    bottom: 28%;
+    width: 196px;
+    transform: scale(0.74);
+    transform-origin: right bottom;
+  }
+
+  .switch-ports {
+    gap: 2px;
+  }
+
+  .switch-ports > i {
+    width: 9px;
+    height: 8px;
+  }
+
+  .switch-brand strong {
+    display: none;
+  }
+
+  .net-status-chip {
+    bottom: 9px;
+    font-size: 5px;
+  }
+
+  .net-tool {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  .tool-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .utp-workbench {
+    padding: 2px;
+  }
+
+  .tool-action {
+    align-items: stretch !important;
+    grid-column: auto !important;
+  }
+
+  .tool-action .btn {
+    width: 100%;
+  }
+
+  .ip-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+  }
+
+  .ip-form .tool-info {
+    grid-column: 1 / -1;
+  }
+
+  .ip-submit {
+    grid-column: 1 / -1;
+    justify-self: stretch;
+  }
+
+  .ip-submit .btn {
+    width: 100%;
+  }
+
+  .terminal {
+    height: 155px;
+  }
+
+  .modal-backdrop {
+    padding: 12px;
+    align-items: flex-start;
+  }
+
+  .modal {
+    margin: 12px auto;
+    padding: 19px;
+    border-radius: 17px;
+  }
+
+  .modal-head h2 {
+    font-size: 23px;
+  }
+
+  .menu-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-summary div:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .menu-actions {
+    flex-direction: column;
+  }
+
+  .menu-actions .btn {
+    width: 100%;
+  }
+
+  .brief-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .brief-controls {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .result-modal,
+  .final-modal {
+    padding: 24px 18px;
+  }
+
+  .result-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .result-stats div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .result-actions {
+    flex-direction: column;
+  }
+
+  .result-actions .btn {
+    width: 100%;
+  }
+
+  .final-summary {
+    grid-template-columns: 1fr;
+  }
+
+  .final-summary div {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .level-up {
+    top: 74px;
+    width: max-content;
+    max-width: calc(100vw - 24px);
+  }
+}
+
+@media (max-height: 760px) and (min-width: 781px) {
+  .mission-overlay-inner {
+    padding-top: 13px;
+    padding-bottom: 15px;
+  }
+
+  .mission-head {
+    padding-bottom: 11px;
+  }
+
+  .mission-head h1 {
+    font-size: 28px;
+  }
+
+  .mission-checklist .check-item {
+    min-height: 28px;
+  }
+
+  .mission-side {
+    padding: 15px;
+  }
+
+  .case-shell {
+    height: min(100%, 475px);
+  }
+
+  .net-canvas {
+    min-height: 205px;
+  }
+
+  .net-tool {
+    min-height: 146px;
+    padding: 10px 15px;
+  }
+
+  .terminal {
+    height: 112px;
+  }
+
+  .assembly-work {
+    padding: 12px;
+  }
+
+  .instruction-panel {
+    top: 90px;
+    padding: 15px;
+  }
+
+  .instruction-panel h2 {
+    font-size: 19px;
+  }
+
+  .step-item {
+    min-height: 32px;
+  }
+
+  .hint-box {
+    padding: 8px 10px;
+  }
+
+  .panel-foot {
+    margin-top: 8px;
+  }
+}
+
+@media (max-height: 640px) and (max-width: 780px) {
+  .start-status {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 10px;
+  }
+
+  .hero h1 {
+    font-size: 40px;
+  }
+
+  .hero-stats {
+    display: none;
+  }
+
+  .hero-actions {
+    margin-bottom: 0;
+  }
+
+  .case-shell {
+    height: 300px;
+  }
+}
